@@ -7,7 +7,7 @@ package Acme::Version::Hex;
 
 use 5.021003;
 
-our $VERSION = 0x1p-10; $VERSION = eval $VERSION;
+our $VERSION = 0x2p-10; $VERSION = eval $VERSION;
 
 1;
 __END__
