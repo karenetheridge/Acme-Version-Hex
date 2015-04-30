@@ -11,6 +11,9 @@ follow any of the steps in this document to submit a patch or bug report;
 these are just recommendations, intended to help you (and help us help you
 faster).
 
+This distribution has a TODO file in the repository; you may want to check
+there to see if your issue or patch idea is mentioned.
+
 The distribution is managed with Dist::Zilla (https://metacpan.org/release/Dist-Zilla).
 This means than many of the usual files you might expect are not in the
 repository, but are generated at release time (e.g. Makefile.PL).
@@ -71,6 +74,13 @@ Once installed, here are some dzil commands you might try:
 
 You can learn more about Dist::Zilla at http://dzil.org/.
 
+The code for this distribution is hosted at GitHub. The repository is:
+https://github.com/karenetheridge/Acme-Version-Hex
+You can submit code changes by forking the repository, pushing your code
+changes to your clone, and then submitting a pull request. Detailed
+instructions for doing that is available here:
+
+https://help.github.com/articles/creating-a-pull-request
 
 If you have found a bug, but do not have an accompanying patch to fix it, you
 can submit an issue report here:
