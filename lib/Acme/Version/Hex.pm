@@ -1,11 +1,13 @@
 use strict;
 use warnings;
 package Acme::Version::Hex;
-# ABSTRACT: ...
-# KEYWORDS: ...
+# ABSTRACT: a module that declares its $VERSION in hexadecimal
+# KEYWORDS: version hexadecimal hex toolchain module
 # vim: set ts=8 sts=4 sw=4 tw=78 et :
 
-our $VERSION = '0.001';
+use 5.021003;
+
+our $VERSION = 0x1p-10; $VERSION = eval $VERSION;
 
 1;
 __END__
@@ -16,17 +18,17 @@ __END__
 
     use Acme::Version::Hex;
 
-    ...
+    my $version = Acme::Version::Hex->VERSION;
 
 =head1 DESCRIPTION
 
-...
+This module demonstrates the use of a floating point hexadecimal number in its
+C<$VERSION>.
 
-=head1 FUNCTIONS/METHODS
-
-=head2 C<foo>
-
-...
+Support for hexadecimal floating point literals (like C<0x1.23p-4>) was added
+in L<perl5213delta|perl 5 version 21.3>. This distribution is a test of the
+toolchain's ability to deal with this version, either in recent perl versions
+or earlier.
 
 =head1 SUPPORT
 
@@ -36,13 +38,9 @@ Bugs may be submitted through L<the RT bug tracker|https://rt.cpan.org/Public/Di
 (or L<bug-Acme-Version-Hex@rt.cpan.org|mailto:bug-Acme-Version-Hex@rt.cpan.org>).
 I am also usually active on irc, as 'ether' at C<irc.perl.org>.
 
-=head1 ACKNOWLEDGEMENTS
-
-...
-
 =head1 SEE ALSO
 
 =for :list
-* L<foo>
+* L<perl5213delta>
 
 =cut
