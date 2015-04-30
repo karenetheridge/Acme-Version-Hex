@@ -1,0 +1,6 @@
+/.ackrc
+/.build/
+!/.gitignore
+/.latest
+/Acme-Version-Hex-*/
+/Acme-Version-Hex-*.tar.gz
