@@ -1,0 +1,21 @@
+
+In this distribution:
+- test handling by:
+    Parse::PMFile
+    ExtUtils::MakeMaker
+    V
+    Module::Info
+    Module::InstalledVersion
+    Module::Version
+
+
+In other distributions:
+- $version::LAX (via [RewriteVersion]'s provide_version) does not recognize us
+    but should it? it is defined as:
+        ...a positive decimal number (integer or
+        decimal-fraction) without exponentiation or else a dotted-decimal
+        v-string. If the v-string has fewer than three components, it must
+        have a leading 'v' character. Otherwise, the leading 'v' is optional.
+        Both decimal and dotted-decimal versions may have a trailing "alpha"
+        component separated by an underscore character after a fractional or
+        dotted-decimal component.
